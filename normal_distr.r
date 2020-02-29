@@ -1,7 +1,7 @@
 # Creates a histogram of a standard normal distribution
 
 x = seq(-3, 3, 0.1)               # Defines the interval
-h = rnorm(50000, 0, 1)            # Histogram
+h = rnorm(50000, 0, 1)            # Histogram data
 y1 = dnorm(x, 0, 1)               # Continuous curve
 hist(h, breaks=100, freq=FALSE)   # Creates the plots
 lines(x, y1)
